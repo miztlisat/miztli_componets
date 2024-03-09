@@ -1,39 +1,43 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Miztli Components
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package provides a collection of reusable components for the Miztli application user interface.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Atoms: Individual basic components.
+  - `BackGlass`: A component for a glass effect on the background.
+  - `Background`: Component for setting the background of the application.
+  - `GlassContainer`: A container with a glass effect.
+  - `MonitorButton`: A monitoring button to control the application.
+  - `StateMission`: A component for visualizing the state of the mission.
 
-## Getting started
+- Molecules: More complex components that combine multiple atoms.
+  - `ImageCarousel`: A carousel of images to display multiple images.
+  - `MissionCountDown`: A countdown timer to show the remaining time of a mission.
+  - `MissionTitle`: A component to display the title of the mission.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- Domain Components: Components related to the domain logic of the application.
+  - `Settings`: Interface for configuring application settings.
+  - `StateMission`: Model to represent the state of a mission.
+  - `StateMissionEnum`: Enumerator for possible states of a mission.
 
-## Usage
+## Getting Started
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To start using these components in your project, follow these steps:
 
-```dart
-const like = 'sample';
-```
+1. Install the `miztli_components` package by adding it to your `pubspec.yaml`:
 
-## Additional information
+    ```yaml
+    dependencies:
+      miztli_components: ^1.0.0
+    ```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+2. Import the necessary components in your Dart files:
+
+    ```dart
+    import 'package:miztli_components/ui/atoms/back_glass.dart';
+    import 'package:miztli_components/ui/molecules/image_carousel.dart';
+    // Import other components as needed
+    ```
+
+3. Use the components in your application as per the provided documentation.
