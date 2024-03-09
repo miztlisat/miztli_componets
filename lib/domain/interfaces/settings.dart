@@ -1,3 +1,5 @@
+library miztli_componets.domain.interfaces.settings;
+
 // ignore_for_file: non_constant_identifier_names
 
 /// A class representing base settings for the application.

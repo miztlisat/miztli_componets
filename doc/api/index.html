@@ -52,34 +52,57 @@
   <div id="dartdoc-main-content" class="main-content">
       
 <section class="desc markdown">
-  <!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-<p>TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.</p>
+  <h1 id="miztli-components">Miztli Components</h1>
+<p>This package provides a collection of reusable components for the Miztli application user interface.</p>
 <h2 id="features">Features</h2>
-<p>TODO: List what your package can do. Maybe include images, gifs, or videos.</p>
-<h2 id="getting-started">Getting started</h2>
-<p>TODO: List prerequisites and provide or point to information on how to
-start using the package.</p>
-<h2 id="usage">Usage</h2>
-<p>TODO: Include short and useful examples for package users. Add longer examples
-to <code>/example</code> folder.</p>
-<pre class="language-dart"><code class="language-dart">const like = 'sample';
+<ul>
+<li>
+<p>Atoms: Individual basic components.</p>
+<ul>
+<li><code>BackGlass</code>: A component for a glass effect on the background.</li>
+<li><code>Background</code>: Component for setting the background of the application.</li>
+<li><code>GlassContainer</code>: A container with a glass effect.</li>
+<li><code>MonitorButton</code>: A monitoring button to control the application.</li>
+<li><code>StateMission</code>: A component for visualizing the state of the mission.</li>
+</ul>
+</li>
+<li>
+<p>Molecules: More complex components that combine multiple atoms.</p>
+<ul>
+<li><code>ImageCarousel</code>: A carousel of images to display multiple images.</li>
+<li><code>MissionCountDown</code>: A countdown timer to show the remaining time of a mission.</li>
+<li><code>MissionTitle</code>: A component to display the title of the mission.</li>
+</ul>
+</li>
+<li>
+<p>Domain Components: Components related to the domain logic of the application.</p>
+<ul>
+<li><code>Settings</code>: Interface for configuring application settings.</li>
+<li><code>StateMission</code>: Model to represent the state of a mission.</li>
+<li><code>StateMissionEnum</code>: Enumerator for possible states of a mission.</li>
+</ul>
+</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>To start using these components in your project, follow these steps:</p>
+<ol>
+<li>
+<p>Install the <code>miztli_components</code> package by adding it to your <code>pubspec.yaml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml">dependencies:
+  miztli_components: ^1.0.0
 </code></pre>
-<h2 id="additional-information">Additional information</h2>
-<p>TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.</p>
+</li>
+<li>
+<p>Import the necessary components in your Dart files:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:miztli_components/ui/atoms/back_glass.dart';
+import 'package:miztli_components/ui/molecules/image_carousel.dart';
+// Import other components as needed
+</code></pre>
+</li>
+<li>
+<p>Use the components in your application as per the provided documentation.</p>
+</li>
+</ol>
 </section>
 
 
@@ -135,15 +158,29 @@ from the package authors, and more.</p>
 <dd>
 </dd>
 
-          <dt id="monitor_button">
-  <span class="name"><a href="ui_atoms_monitor_button/ui_atoms_monitor_button-library.html">ui/atoms/monitor_button</a></span> 
+          <dt id="miztli_componets.domain.enums.state_mission">
+  <span class="name"><a href="miztli_componets.domain.enums.state_mission/miztli_componets.domain.enums.state_mission-library.html">domain/enums/state_mission</a></span> 
 
 </dt>
 <dd>
 </dd>
 
-          <dt id="settings">
-  <span class="name"><a href="domain_interfaces_settings/domain_interfaces_settings-library.html">domain/interfaces/settings</a></span> 
+          <dt id="miztli_componets.domain.interfaces.settings">
+  <span class="name"><a href="miztli_componets.domain.interfaces.settings/miztli_componets.domain.interfaces.settings-library.html">domain/interfaces/settings</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="miztli_componets.domain.models.state_mission">
+  <span class="name"><a href="miztli_componets.domain.models.state_mission/miztli_componets.domain.models.state_mission-library.html">domain/models/state_mission</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="monitor_button">
+  <span class="name"><a href="ui_atoms_monitor_button/ui_atoms_monitor_button-library.html">ui/atoms/monitor_button</a></span> 
 
 </dt>
 <dd>
@@ -156,18 +193,20 @@ from the package authors, and more.</p>
 <dd>
 </dd>
 
-          <dt id="state_mission">
-  <span class="name"><a href="domain_models_state_mission/domain_models_state_mission-library.html">domain/models/state_mission</a></span> 
+          <h3>Domain</h3>
+            <dt id="miztli_componets.domain">
+  <span class="name"><a href="miztli_componets.domain/miztli_componets.domain-library.html">domain</a></span> 
 
 </dt>
-<dd>
+<dd>The Domain.
 </dd>
 
-          <dt id="state_misson">
-  <span class="name"><a href="domain_enums_state_misson/domain_enums_state_misson-library.html">domain/enums/state_misson</a></span> 
+          <h3>UI</h3>
+            <dt id="miztli_componets.ui">
+  <span class="name"><a href="miztli_componets.ui/miztli_componets.ui-library.html">ui</a></span> 
 
 </dt>
-<dd>
+<dd>The UI components.
 </dd>
 
         </dl>
@@ -198,11 +237,15 @@ from the package authors, and more.</p>
       <li><a href="ui_molecules_mission_count_down/ui_molecules_mission_count_down-library.html">ui/molecules/mission_count_down</a></li>
       <li><a href="ui_molecules_mission_title/ui_molecules_mission_title-library.html">ui/molecules/mission_title</a></li>
       <li><a href="miztli_componets/miztli_componets-library.html">miztli_componets</a></li>
+      <li><a href="miztli_componets.domain.enums.state_mission/miztli_componets.domain.enums.state_mission-library.html">domain/enums/state_mission</a></li>
+      <li><a href="miztli_componets.domain.interfaces.settings/miztli_componets.domain.interfaces.settings-library.html">domain/interfaces/settings</a></li>
+      <li><a href="miztli_componets.domain.models.state_mission/miztli_componets.domain.models.state_mission-library.html">domain/models/state_mission</a></li>
       <li><a href="ui_atoms_monitor_button/ui_atoms_monitor_button-library.html">ui/atoms/monitor_button</a></li>
-      <li><a href="domain_interfaces_settings/domain_interfaces_settings-library.html">domain/interfaces/settings</a></li>
       <li><a href="ui_atoms_state_mission/ui_atoms_state_mission-library.html">ui/atoms/state_mission</a></li>
-      <li><a href="domain_models_state_mission/domain_models_state_mission-library.html">domain/models/state_mission</a></li>
-      <li><a href="domain_enums_state_misson/domain_enums_state_misson-library.html">domain/enums/state_misson</a></li>
+      <li class="section-subtitle">Domain</li>
+        <li class="section-subitem"><a href="miztli_componets.domain/miztli_componets.domain-library.html">domain</a></li>
+      <li class="section-subtitle">UI</li>
+        <li class="section-subitem"><a href="miztli_componets.ui/miztli_componets.ui-library.html">ui</a></li>
 </ol>
 
   </div>

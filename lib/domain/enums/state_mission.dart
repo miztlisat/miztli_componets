@@ -1,3 +1,4 @@
+library miztli_componets.domain.enums.state_mission;
 /// An enumeration representing different states of a mission.
 enum StatesMission {
   /// Waiting for launch.

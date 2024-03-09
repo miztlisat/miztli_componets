@@ -1,4 +1,5 @@
-import 'package:miztli_componets/domain/enums/state_misson.dart';
+library miztli_componets.domain.models.state_mission;
+import 'package:miztli_componets/domain/enums/state_mission.dart';
 
 /// An abstract class representing a state model for a mission.
 abstract class StateMissionModel {
